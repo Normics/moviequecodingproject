@@ -39,6 +39,34 @@
     font-weight: normal;
     font-style: normal;
 }
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) { 
+    .title { font-size: 8rem; }
+    .main ul > li { width: 33%;}
+    .main ul > li > a .box{ height: 550px;}
+    .box .text{font-size: 6rem;}
+    .box .movie{font-size: 4rem;}
+    .box .name{font-size: 2rem;}
+
+}
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    .title { font-size: 8rem; }
+    .main ul > li { width: 33%;}
+    .main ul > li > a .box{ height: 280px;}
+    .box .text{font-size: 5rem;}
+    .box .movie{font-size: 3rem;}
+    .box .name{font-size: 1.8rem;}
+}
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) { 
+    .title { font-size: 5rem; }
+    .main ul > li { width: 49%;}
+    .main ul > li > a .box{ height: 200px;}
+    .box .text{font-size: 3rem;}
+    .box .movie{font-size: 2rem;}
+    .box .name{font-size: 1.5rem;}
+}
 
 *{
     margin: 0;
@@ -51,6 +79,7 @@ html{
 }
 
 body{
+    width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,7 +90,6 @@ body{
 
 .header{
     position: relative;
-    width: 100%;
     height: 300px;
 }
 
@@ -73,9 +101,7 @@ body{
     display: block;
     text-align: center;
     position: relative;
-    top: 50%;
-    font-size: 8rem;
-    
+    top:40%;
 }
 
 .main{
@@ -88,7 +114,6 @@ body{
 .main ul > li {
     display: inline-block;
     vertical-align: top;
-    width: 33%;
 }
 
 .main ul > li > a{
@@ -99,7 +124,6 @@ body{
 }
 
 .main ul > li > a .box{ 
-    height: 400px;
     position: relative;
     font-family: 'ProductSans-Regular', sans-serif;
     border: 2px solid white;
@@ -112,13 +136,11 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Dynalight-Regular', sans-serif;
-    font-size: 6rem;
     color: white;
 }
   
 .box .movie{
     color: white;
-    font-size: 4rem;
     font-weight: 900;
     font-family: 'MARUBuriBeta-Regular', sans-serif;
     position: absolute;
@@ -128,7 +150,6 @@ body{
 
 .box .name{
     color: white;
-    font-size: 2rem;
     font-weight: 100;
     font-family: 'MARUBuriBeta-Regular', sans-serif;
     position: absolute;
