@@ -6,15 +6,18 @@
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) { 
     .header .sidebar ul li{font-size: 40px; margin-bottom: 50px;}
+    div[class='sidebar'] {width:300px; right:-300px;}
 
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
     .header .sidebar ul li{font-size: 33px; margin-bottom: 43px;}
+    div[class='sidebar'] {width:250px; right:-250px;}
 }
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) { 
     .header .sidebar ul li{font-size: 25px; margin-bottom: 35px;}
+    div[class='sidebar'] {width:200px; right:-200px;}
 }
 
 input[id="menuicon"] {
@@ -70,12 +73,10 @@ input[id="menuicon"]:checked + label span:nth-child(3){
 }
 
 div[class="sidebar"] {
-    width:300px;
     height:100%;
     background:rgba(0,0,0,0.9);
     position:fixed;
     top:0;
-    right:-300px;
     z-index:1;
     transition:all .5s;
 }
