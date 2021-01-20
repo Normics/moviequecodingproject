@@ -1,0 +1,263 @@
+/*Fade-in 효과*/
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+/*abster*/
+@font-face{
+    font-family: abster;
+    src:url(./font/abster-webfont.woff) format('woff')
+}
+/*Product Sans*/
+@font-face {
+    font-family: 'ProductSans-Regular';
+    src: url('./font/Productsanswfont/ProductSans-Regular.svg#ProductSans-Regular') format('svg'),
+         url('./font/Productsanswfont/ProductSans-Regular.ttf') format('truetype'),
+         url('./font/Productsanswfont/ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Dynalight*/
+@font-face {
+    font-family: 'Dynalight-Regular';
+    src: url('./font/dynalightwfont/Dynalight-Regular.eot');
+    src: url('./font/dynalightwfont/Dynalight-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./font/dynalightwfont/Dynalight-Regular.svg#Dynalight-Regular') format('svg'),
+         url('./font/dynalightwfont/Dynalight-Regular.ttf') format('truetype'),
+         url('./font/dynalightwfont/Dynalight-Regular.woff') format('woff'),
+         url('./font/dynalightwfont/Dynalight-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/*마루부리*/
+@font-face {
+    font-family: 'MARUBuriBeta-Regular';
+    src: url('./font/마루/MARUBuriBeta-Regular.svg#MARUBuriBeta-Regular') format('svg'),
+         url('./font/마루/MARUBuriBeta-Regular.ttf') format('truetype'),
+         url('./font/마루/MARUBuriBeta-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(./이미지/무비끄맨_가운데.png);
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.header .title{
+    background: none;
+    color: white;
+    font-family: abster, sans-serif;
+    color: white;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    font-size: 8rem;
+    
+}
+
+.main{
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.main ul > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+}
+
+.main ul > li > a{
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.main ul > li > a .box{ 
+    height: 400px;
+    position: relative;
+    font-family: 'ProductSans-Regular', sans-serif;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+.main .box .text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dynalight-Regular', sans-serif;
+    font-size: 6rem;
+    color: white;
+}
+  
+.box .movie{
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'MARUBuriBeta-Regular', sans-serif;
+    position: absolute;
+    left: 20px;
+    bottom: 150%;
+}
+
+.box .name{
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'MARUBuriBeta-Regular', sans-serif;
+    position: absolute;
+    left: 20px;
+    top: 150%;
+}
+  
+.box:hover{
+    cursor: pointer;
+}
+  
+.box:hover > .text{
+    opacity: 0;
+}
+  
+.box:hover > .movie{
+    bottom: 52%;
+    transition: all 0.4s;
+}
+
+.box:hover > .name{
+    top: 52%;
+    transition: all 0.4s;
+}
+
+.Gandalf{
+    opacity: 0;
+    animation: fadeIn 1s 0.2s ease forwards;
+}
+
+.Gandalf:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/간달프.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Joker{
+    opacity: 0;
+    animation: fadeIn 1s 0.5s ease forwards;
+}
+
+.Joker:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/히스레저조커.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Olivia{
+    opacity: 0;
+    animation: fadeIn 1s 0.3s ease forwards;
+}
+
+.Olivia:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/올리비아.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Flash{
+    opacity: 0;
+    animation: fadeIn 1s 0.3s ease forwards;
+}
+
+.Flash:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/플래쉬.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Latso{
+    opacity: 0;
+    animation: fadeIn 1s 0.6s ease forwards;
+}
+
+.Latso:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/랏소.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Frank{
+    opacity: 0;
+    animation: fadeIn 1s 0.2s ease forwards;
+}
+
+.Frank:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/프랭크.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Josse{
+    opacity: 0;
+    animation: fadeIn 1s 0.4s ease forwards;
+}
+
+.Josse:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/조제.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Groot{
+    opacity: 0;
+    animation: fadeIn 1s 0.2s ease forwards;
+}
+
+.Groot:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/groot정.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Farhan{
+    opacity: 0;
+    animation: fadeIn 1s 0.5s ease forwards;
+}
+
+.Farhan:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/파르한정.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

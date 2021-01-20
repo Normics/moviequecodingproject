@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'SignericaMedium';
+  src: url('SignericaMedium.svg#SignericaMedium') format('svg'),
+       url('SignericaMedium.ttf') format('truetype'),
+       url('SignericaMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Signerica_Medium';
+  src: url('Signerica_Medium.eot');
+  src: url('Signerica_Medium.eot?#iefix') format('embedded-opentype'),
+       url('Signerica_Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

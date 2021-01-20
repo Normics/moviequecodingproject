@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'MARUBuriBeta-Regular';
+  src: url('MARUBuriBeta-Regular.svg#MARUBuriBeta-Regular') format('svg'),
+       url('MARUBuriBeta-Regular.ttf') format('truetype'),
+       url('MARUBuriBeta-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('MaruBuri-Regular.eot');
+  src: url('MaruBuri-Regular.eot?#iefix') format('embedded-opentype'),
+       url('MaruBuri-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
