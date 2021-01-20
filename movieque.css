@@ -1,0 +1,244 @@
+/*마루부리*/
+@font-face {
+    font-family: 'MARUBuriBeta-Regular';
+    src: url('./font/마루/MARUBuriBeta-Regular.svg#MARUBuriBeta-Regular') format('svg'),
+         url('./font/마루/MARUBuriBeta-Regular.ttf') format('truetype'),
+         url('./font/마루/MARUBuriBeta-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*abster*/
+@font-face{
+    font-family: abster;
+    src:url(./font/abster-webfont.woff) format('woff')
+}
+/*Product Sans*/
+@font-face {
+    font-family: 'ProductSans-Regular';
+    src: url('./font/Productsanswfont/ProductSans-Regular.svg#ProductSans-Regular') format('svg'),
+         url('./font/Productsanswfont/ProductSans-Regular.ttf') format('truetype'),
+         url('./font/Productsanswfont/ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) { 
+    .title { font-size: 8rem; }
+}
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    .title { font-size: 8rem; }
+}
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) { 
+    .title { font-size: 5rem; }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(./이미지/무비끄맨_가운데.png);
+    color: white;
+}
+
+.header{
+    position: relative;
+    height: 300px;
+}
+
+.header .title{
+    background: none;
+    color: white;
+    font-family: abster, sans-serif;
+    color: white;
+    display: block;
+    text-align: center;
+    position: relative;
+    top:40%;
+}
+
+.set1{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+input[id="Q1"]{
+    display: none;
+}
+
+input[id="Q1"] + label{
+    color:white;
+    font-size: 10rem;
+    font-family: 'ProductSans-Regular', sans-serif;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 150px;
+}
+
+input[id="Q1"] + label:hover{
+    cursor: pointer;
+}
+
+input[id="Q1"]:checked + label{
+    left:700px;
+    transition:all .5s;
+}
+
+
+div[class="A1"] {
+    font-size: 2.5rem;
+    font-family: 'MARUBuriBeta-Regular', sans-serif;
+    height:100%;
+    position: absolute;
+    z-index:1;
+    left: -600px;
+    width: 600px;
+}
+
+.A1 span{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);;
+}
+
+input[id="Q1"]:checked + label + div {
+    left: 50px;
+    transition:all .5s;
+}
+
+.set2{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+input[id="Q2"]{
+    display: none;
+}
+
+input[id="Q2"] + label{
+    color:white;
+    font-size: 10rem;
+    font-family: 'ProductSans-Regular', sans-serif;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 150px;
+    text-align: right;
+}
+
+input[id="Q2"] + label:hover{
+    cursor: pointer;
+}
+
+input[id="Q2"]:checked + label{
+    right:700px;
+    transition:all .5s;
+}
+
+
+div[class="A2"] {
+    font-size: 2.5rem;
+    font-family: 'MARUBuriBeta-Regular', sans-serif;
+    height:100%;
+    position: absolute;
+    z-index:1;
+    right: -600px;
+    width: 600px;
+}
+
+.A2 span{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);;
+}
+
+input[id="Q2"]:checked + label + div {
+    right:0px;
+    transition:all .5s;
+}
+
+.set3{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+input[id="Q3"]{
+    display: none;
+}
+
+input[id="Q3"] + label{
+    color:white;
+    font-size: 10rem;
+    font-family: 'ProductSans-Regular', sans-serif;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 150px;
+}
+
+input[id="Q3"] + label:hover{
+    cursor: pointer;
+}
+
+input[id="Q3"]:checked + label{
+    left:700px;
+    transition:all .5s;
+}
+
+
+div[class="A3"] {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'MARUBuriBeta-Regular', sans-serif;
+    height:100%;
+    position: absolute;
+    z-index:1;
+    left: -600px;
+    width: 600px;
+    color: white;
+    text-decoration: none;
+}
+
+div[class="A3"] a:nth-child(1){
+    position: absolute;
+    top:60%;
+    transform: translateY(-50%);
+}
+
+div[class="A3"] a:nth-child(2){
+    position: absolute;
+    bottom:60%;
+    transform: translateY(50%);
+}
+
+input[id="Q3"]:checked + label + div {
+    left: 0;
+    transition:all .5s;
+}
+
+a { 
+    text-decoration:none; 
+    color: white;
+}
