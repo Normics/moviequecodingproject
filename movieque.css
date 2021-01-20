@@ -1,3 +1,9 @@
+/*fade in효과*/
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
 /*마루부리*/
 @font-face {
     font-family: 'MARUBuriBeta-Regular';
@@ -29,6 +35,7 @@ html{
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) { 
     .title { font-size: 8rem; }
+    
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
@@ -73,10 +80,13 @@ body{
 }
 
 .set1{
-    height: 500px;
     position: relative;
     overflow: hidden;
     width: 100%;
+    height: 500px;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: white;
 }
 
 input[id="Q1"]{
@@ -84,13 +94,15 @@ input[id="Q1"]{
 }
 
 input[id="Q1"] + label{
-    color:white;
     font-size: 10rem;
+    left: 150px;
+    color:white;
     font-family: 'ProductSans-Regular', sans-serif;
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    left: 150px;
+    opacity: 0;
+    animation: fadeIn 1s 0.2s ease-in-out forwards;
 }
 
 input[id="Q1"] + label:hover{
@@ -98,19 +110,19 @@ input[id="Q1"] + label:hover{
 }
 
 input[id="Q1"]:checked + label{
-    left:700px;
     transition:all .5s;
+    left: 700px;
 }
 
 
 div[class="A1"] {
-    font-size: 2.5rem;
     font-family: 'MARUBuriBeta-Regular', sans-serif;
     height:100%;
     position: absolute;
     z-index:0;
     left: -600px;
     width: 600px;
+    font-size: 3rem;
 }
 
 .A1 span{
@@ -120,15 +132,15 @@ div[class="A1"] {
 }
 
 input[id="Q1"]:checked + label + div {
-    left: 50px;
     transition:all .5s;
+    left: 50px;
 }
 
 .set2{
-    height: 500px;
     position: relative;
     overflow: hidden;
     width: 100%;
+    height: 500px;
 }
 
 input[id="Q2"]{
@@ -137,13 +149,15 @@ input[id="Q2"]{
 
 input[id="Q2"] + label{
     color:white;
-    font-size: 10rem;
     font-family: 'ProductSans-Regular', sans-serif;
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    right: 150px;
     text-align: right;
+    opacity: 0;
+    animation: fadeIn 1s 0.2s ease-in-out forwards;
+    font-size: 10rem; 
+    right: 150px;
 }
 
 input[id="Q2"] + label:hover{
@@ -151,19 +165,19 @@ input[id="Q2"] + label:hover{
 }
 
 input[id="Q2"]:checked + label{
-    right:700px;
     transition:all .5s;
+    right: 700px;
 }
 
 
 div[class="A2"] {
-    font-size: 2.5rem;
     font-family: 'MARUBuriBeta-Regular', sans-serif;
     height:100%;
     position: absolute;
     z-index:0;
     right: -600px;
     width: 600px;
+    font-size: 3rem;
 }
 
 .A2 span{
@@ -173,8 +187,8 @@ div[class="A2"] {
 }
 
 input[id="Q2"]:checked + label + div {
-    right:0px;
     transition:all .5s;
+    right: 50px;
 }
 
 .set3{
@@ -182,6 +196,9 @@ input[id="Q2"]:checked + label + div {
     position: relative;
     overflow: hidden;
     width: 100%;
+    border-width: 2px 0 0;
+    border-style: solid;
+    border-color: white;
 }
 
 input[id="Q3"]{
@@ -196,6 +213,8 @@ input[id="Q3"] + label{
     top:50%;
     transform: translateY(-50%);
     left: 150px;
+    opacity: 0;
+    animation: fadeIn 1s 0.2s ease-in-out forwards;
 }
 
 input[id="Q3"] + label:hover{
