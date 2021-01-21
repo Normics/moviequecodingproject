@@ -157,16 +157,16 @@ body{
     cursor: pointer;
 }
   
-.box:active > .text{
+.box:hover > .text{
     opacity: 0;
 }
   
-.box:active > .movie{
+.box:hover > .movie{
     bottom: 52%;
     transition: all 0.4s;
 }
 
-.box:active > .name{
+.box:hover > .name{
     top: 52%;
     transition: all 0.4s;
 }
@@ -176,7 +176,7 @@ body{
     animation: fadeIn 1s 0.2s ease forwards;
 }
 
-.Gandalf:active{
+.Gandalf:hover{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/간달프.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body{
     animation: fadeIn 1s 0.5s ease forwards;
 }
 
-.Joker:active{
+.Joker:hover{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/히스레저조커.png);
     background-size: cover;
     background-repeat: no-repeat;
