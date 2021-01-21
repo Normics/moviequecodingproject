@@ -156,7 +156,7 @@ body{
 .grid{
     display: grid;
     grid-template-columns: repeat(6,40px);
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(50px, auto);
     grid-gap: 22px;
     margin: 0 auto;
 }
