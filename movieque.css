@@ -34,6 +34,7 @@ html{
 
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) { 
+    .header { height: 300px; }
     .title { font-size: 8rem; }
 
     .set1{height: 500px;}
@@ -56,21 +57,22 @@ html{
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
+    .header { height: 300px; }
     .title { font-size: 7rem; }
 
-    .set1{height: 500px;}
+    .set1{height: 400px;}
     input[id="Q1"] + label {font-size: 8rem; left: 100px; }
     input[id="Q1"]:checked + label{left: 550px;}
     div[class="A1"] {font-size: 2.2rem;}
     input[id="Q1"]:checked + label + div {left: 25px;}
 
-    .set2 { height: 500px; }
+    .set2 { height: 400px; }
     input[id="Q2"] + label {font-size: 7em; right: 100px; text-align: right;}
     input[id="Q2"]:checked + label{right: 550px;}
     div[class="A2"] {font-size: 2.2rem; right: -600px;}
     input[id="Q2"]:checked + label + div {right: -120px;}
 
-    .set3{height: 500px;}
+    .set3{height: 400px;}
     input[id="Q3"] + label {font-size: 7rem; left: 100px;}
     input[id="Q3"]:checked + label{left: 550px;}
     div[class="A3"] {font-size: 5rem; left: -600px;}
@@ -78,22 +80,23 @@ html{
 }
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) { 
+    .header { height: 200px; }
     .title { font-size: 4rem; }
 
-    .set1{height: 300px;}
-    input[id="Q1"] + label {font-size: 5rem; left: 30px;}
+    .set1{height: 270px;}
+    input[id="Q1"] + label {font-size: 4rem; left: 30px;}
     input[id="Q1"]:checked + label{left: 330px;}
     div[class="A1"] {font-size: 1.5rem; left: -600px;}
     input[id="Q1"]:checked + label + div {left: 5px;}
 
-    .set2 { height: 300px; }
-    input[id="Q2"] + label {font-size: 5rem; left: 30px;}
+    .set2 { height: 270px; }
+    input[id="Q2"] + label {font-size: 4rem; left: 30px;}
     input[id="Q2"]:checked + label{left: 330px;}
     div[class="A2"] {font-size: 1.5rem; left: -600px;}
     input[id="Q2"]:checked + label + div {left: 5px;}
 
-    .set3{height: 300px;}
-    input[id="Q3"] + label {font-size: 5rem; left: 30px;}
+    .set3{height: 270px;}
+    input[id="Q3"] + label {font-size: 4.0rem; left: 30px;}
     input[id="Q3"]:checked + label{left: 330px;}
     div[class="A3"] {font-size: 3rem; left: -600px;}
     input[id="Q3"]:checked + label + div {left: 120px;}
@@ -118,7 +121,6 @@ body{
 
 .header{
     position: relative;
-    height: 300px;
 }
 
 .header .title{
@@ -128,8 +130,10 @@ body{
     color: white;
     display: block;
     text-align: center;
-    position: relative;
-    top:40%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .set1{

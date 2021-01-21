@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.section .slidewrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section .slidelist{
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.section .slidelist > li{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all .5s;
+}
+
+.section .slidelist > li > a{
+  display: block;
+  position: relative;
+}
+
+.slide-pagelist {
+  text-align: center;
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+.slide-pagelist > li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#999;}
+.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#999;}
+.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#999;}
+
+.section input[id*="s1-slide"] {display: none;}
+.section input[id="s1-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s1-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s1-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s1-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+
+.section input[id*="s2-slide"] {display: none;}
+.section input[id="s2-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s2-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s2-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s2-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s2-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+
+.section input[id*="s3-slide"] {display: none;}
+.section input[id="s3-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s3-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s3-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s3-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s3-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+
+.section input[id*="s4-slide"] {display: none;}
+.section input[id="s4-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s4-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s4-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s4-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s4-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section input[id="s4-slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+
+.section input[id*="s5-slide"] {display: none;}
+.section input[id="s5-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s5-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s5-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s5-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s5-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+
+.section input[id*="s6-slide"] {display: none;}
+.section input[id="s6-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s6-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s6-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s6-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+
+.section input[id*="s7-slide"] {display: none;}
+.section input[id="s7-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s7-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s7-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s7-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s7-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+
+.section input[id*="s8-slide"] {display: none;}
+.section input[id="s8-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s8-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s8-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s8-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+
+.section input[id*="s9-slide"] {display: none;}
+.section input[id="s9-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s9-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s9-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s9-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+
+.section input[id*="s10-slide"] {display: none;}
+.section input[id="s10-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s10-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s10-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s10-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s10-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+
+.section input[id*="s11-slide"] {display: none;}
+.section input[id="s11-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s11-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s11-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s11-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s11-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+
+.section input[id*="s12-slide"] {display: none;}
+.section input[id="s12-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s12-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s12-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s12-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s12-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section input[id="s12-slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+.section input[id="s12-slide07"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
+
+.section input[id*="s13-slide"] {display: none;}
+.section input[id="s13-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="s13-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="s13-slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="s13-slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="s13-slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section input[id="s13-slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) { 
+  .slide-pagelist > li > label{
+    display: block;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+}
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+  .slide-pagelist > li > label{
+    display: block;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+}
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) { 
+  .img-box-1 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-2 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-3 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-4 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-5 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-6 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-7 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 1px;
+    cursor: pointer;
+  }
+  .img-box-8 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-9 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-10 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-11 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-12 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+  .img-box-13 .slide-pagelist > li > label{
+    display: block;
+    padding: 4px 6px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+}
