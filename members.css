@@ -43,7 +43,7 @@
 @media all and (min-width:1024px) { 
     .title { font-size: 8rem; }
     .main ul > li { width: 33%;}
-    .main ul > li > a .box{ height: 550px;}
+    .main ul > li > a .box{ height: 386px;}
     .box .text{font-size: 6rem;}
     .box .movie{font-size: 4rem; left: 25px;}
     .box .name{font-size: 2rem; left: 25px;}
@@ -94,7 +94,6 @@ body{
 
 .header .title{
     background: none;
-    color: white;
     font-family: abster, sans-serif;
     color: white;
     display: block;
@@ -104,7 +103,7 @@ body{
 }
 
 .main{
-    max-width: 1800px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -158,16 +157,16 @@ body{
     cursor: pointer;
 }
   
-.box:hover > .text{
+.box:active > .text{
     opacity: 0;
 }
   
-.box:hover > .movie{
+.box:active > .movie{
     bottom: 52%;
     transition: all 0.4s;
 }
 
-.box:hover > .name{
+.box:active > .name{
     top: 52%;
     transition: all 0.4s;
 }
@@ -177,7 +176,7 @@ body{
     animation: fadeIn 1s 0.2s ease forwards;
 }
 
-.Gandalf:hover{
+.Gandalf:active{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/간달프.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -189,7 +188,7 @@ body{
     animation: fadeIn 1s 0.5s ease forwards;
 }
 
-.Joker:hover{
+.Joker:active{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/히스레저조커.png);
     background-size: cover;
     background-repeat: no-repeat;

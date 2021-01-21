@@ -80,19 +80,19 @@ html{
 @media all and (max-width:767px) { 
     .title { font-size: 4rem; }
 
-    .set1{height: 400px;}
+    .set1{height: 300px;}
     input[id="Q1"] + label {font-size: 5rem; left: 30px;}
     input[id="Q1"]:checked + label{left: 330px;}
     div[class="A1"] {font-size: 1.5rem; left: -600px;}
     input[id="Q1"]:checked + label + div {left: 5px;}
 
-    .set2 { height: 400px; }
+    .set2 { height: 300px; }
     input[id="Q2"] + label {font-size: 5rem; left: 30px;}
     input[id="Q2"]:checked + label{left: 330px;}
     div[class="A2"] {font-size: 1.5rem; left: -600px;}
     input[id="Q2"]:checked + label + div {left: 5px;}
 
-    .set3{height: 400px;}
+    .set3{height: 300px;}
     input[id="Q3"] + label {font-size: 5rem; left: 30px;}
     input[id="Q3"]:checked + label{left: 330px;}
     div[class="A3"] {font-size: 3rem; left: -600px;}
@@ -139,6 +139,7 @@ body{
     border-width: 2px 0;
     border-style: solid;
     border-color: white;
+    white-space: nowrap;
 }
 
 input[id="Q1"]{
@@ -188,6 +189,7 @@ input[id="Q1"]:checked + label + div {
     position: relative;
     overflow: hidden;
     width: 100%;
+    white-space: nowrap;
 }
 
 input[id="Q2"]{
@@ -239,6 +241,7 @@ input[id="Q2"]:checked + label + div {
     border-width: 2px 0 0;
     border-style: solid;
     border-color: white;
+    white-space: nowrap;
 }
 
 input[id="Q3"]{
