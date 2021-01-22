@@ -20,6 +20,29 @@ html{
   position: relative;
 }
 
+.section .slidelist label {
+  position:absolute;
+  z-index:10;
+  top:50%;
+  transform:translateY(-50%);
+  padding:30px;
+  cursor:pointer;
+}
+
+.slide-control > div {
+  display:none;
+}
+
+.section .left {
+  left: 0px;
+  background:url('./이미지/left.png') center center / 100% no-repeat;
+}
+
+.section .right {
+  right: 0px;
+  background:url('./이미지/right.png') center center / 100% no-repeat;
+}
+
 .section .slidelist > li{
   display: inline-block;
   vertical-align: middle;
@@ -43,10 +66,174 @@ html{
   vertical-align: top;
 }
 
-.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#999;}
-.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#999;}
-.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#999;}
+.slide-pagelist > li > label{
+  display: block;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background: rgb(102, 102, 102);
+  cursor: pointer;
+}
 
+/* 좌,우 화살표 바 */
+.section input[id="s1-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s1-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s1-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s1-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+
+.section input[id="s2-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s2-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s2-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s2-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s2-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+
+.section input[id="s3-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s3-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s3-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s3-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s3-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+
+.section input[id="s4-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s4-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s4-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s4-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s4-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+.section input[id="s4-slide06"]:checked ~ .slidewrap .slide-control > div:nth-child(6) {display:block;}
+
+.section input[id="s5-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s5-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s5-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s5-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s5-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+
+.section input[id="s6-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s6-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s6-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s6-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+
+.section input[id="s7-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s7-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s7-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s7-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s7-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+
+.section input[id="s8-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s8-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s8-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s8-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+
+.section input[id="s9-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s9-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s9-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s9-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+
+.section input[id="s10-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s10-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s10-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s10-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s10-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+
+.section input[id="s11-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s11-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s11-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s11-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s11-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+
+.section input[id="s12-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s12-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s12-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s12-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s12-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+.section input[id="s12-slide06"]:checked ~ .slidewrap .slide-control > div:nth-child(6) {display:block;}
+.section input[id="s12-slide07"]:checked ~ .slidewrap .slide-control > div:nth-child(7) {display:block;}
+
+.section input[id="s13-slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="s13-slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="s13-slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="s13-slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="s13-slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}
+.section input[id="s13-slide06"]:checked ~ .slidewrap .slide-control > div:nth-child(6) {display:block;}
+
+
+/* 체크됐을 때 네비게이션 바 색상 변하게 */
+.section input[id="s1-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s1-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s1-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s1-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+
+.section input[id="s2-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s2-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s2-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s2-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s2-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+
+.section input[id="s3-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s3-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s3-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s3-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s3-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+
+.section input[id="s4-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s4-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s4-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s4-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s4-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+.section input[id="s4-slide06"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(6) > label {background:#fff;}
+
+.section input[id="s5-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s5-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s5-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s5-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s5-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+
+.section input[id="s6-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s6-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s6-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s6-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+
+.section input[id="s7-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s7-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s7-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s7-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s7-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+
+.section input[id="s8-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s8-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s8-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s8-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+
+.section input[id="s9-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s9-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s9-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s9-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+
+.section input[id="s10-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s10-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s10-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s10-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s10-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+
+.section input[id="s11-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s11-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s11-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s11-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s11-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+
+.section input[id="s12-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s12-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s12-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s12-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s12-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+.section input[id="s12-slide06"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(6) > label {background:#fff;}
+.section input[id="s12-slide07"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(7) > label {background:#fff;}
+
+.section input[id="s13-slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+.section input[id="s13-slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+.section input[id="s13-slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+.section input[id="s13-slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
+.section input[id="s13-slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background:#fff;}
+.section input[id="s13-slide06"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(6) > label {background:#fff;}
+
+/* 슬라이드 효과 */
 .section input[id*="s1-slide"] {display: none;}
 .section input[id="s1-slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
 .section input[id="s1-slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
@@ -141,33 +328,18 @@ html{
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) { 
   .slide-pagelist > li > label{
-    display: block;
-    padding: 5px 10px;
-    border-radius: 30px;
-    background: #ccc;
     margin: 0 5px;
-    cursor: pointer;
   }
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
   .slide-pagelist > li > label{
-    display: block;
-    padding: 5px 10px;
-    border-radius: 30px;
-    background: #ccc;
     margin: 0 5px;
-    cursor: pointer;
   }
 }
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) { 
   .slide-pagelist > li > label{
-    display: block;
-    padding: 4px 6px;
-    border-radius: 30px;
-    background: #ccc;
     margin: 0 2px;
-    cursor: pointer;
   }
 }
