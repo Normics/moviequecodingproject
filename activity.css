@@ -165,17 +165,17 @@ body{
 
 .section .slidelist > li > a img{width: 100%;}
 
-.img-box-1{grid-column: span 3;}
-.img-box-2{grid-column: span 3;}
+.img-box-1{grid-column: span 6;}
+.img-box-2{grid-column: span 6;}
 .img-box-3{grid-column: span 6;}
-.img-box-4{grid-column: span 3;}
-.img-box-5{grid-column: span 3;}
-.img-box-6{grid-column: span 2;}
-.img-box-7{grid-column: span 2;}
-.img-box-8{grid-column: span 2;}
+.img-box-4{grid-column: span 6;}
+.img-box-5{grid-column: span 6;}
+.img-box-6{grid-column: span 6;}
+.img-box-7{grid-column: span 6;}
+.img-box-8{grid-column: span 6;}
 .img-box-9{grid-column: span 6;}
-.img-box-10{grid-column: span 3;}
-.img-box-11{grid-column: span 3;}
-.img-box-12{grid-column: span 3;}
-.img-box-13{grid-column: span 3;}
+.img-box-10{grid-column: span 6;}
+.img-box-11{grid-column: span 6;}
+.img-box-12{grid-column: span 6;}
+.img-box-13{grid-column: span 6;}
 }

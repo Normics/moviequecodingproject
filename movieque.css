@@ -284,13 +284,19 @@ div[class="A3"] {
 
 div[class="A3"] a:nth-child(1){
     position: absolute;
-    top:60%;
+    top:20%;
     transform: translateY(-50%);
 }
 
 div[class="A3"] a:nth-child(2){
     position: absolute;
-    bottom:60%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+div[class="A3"] a:nth-child(3){
+    position: absolute;
+    bottom:20%;
     transform: translateY(50%);
 }
 
