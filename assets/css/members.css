@@ -7,35 +7,26 @@
 /*abster*/
 @font-face{
     font-family: abster;
-    src:url(./font/abster-webfont.woff) format('woff')
+    src:url(../font/abster-webfont.woff) format('woff');
 }
 /*Product Sans*/
 @font-face {
     font-family: 'ProductSans-Regular';
-    src: url('./font/Productsanswfont/ProductSans-Regular.svg#ProductSans-Regular') format('svg'),
-         url('./font/Productsanswfont/ProductSans-Regular.ttf') format('truetype'),
-         url('./font/Productsanswfont/ProductSans-Regular.woff') format('woff');
+    src:url('../font/Productsanswfont/ProductSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 /*Dynalight*/
 @font-face {
     font-family: 'Dynalight-Regular';
-    src: url('./font/dynalightwfont/Dynalight-Regular.eot');
-    src: url('./font/dynalightwfont/Dynalight-Regular.eot?#iefix') format('embedded-opentype'),
-         url('./font/dynalightwfont/Dynalight-Regular.svg#Dynalight-Regular') format('svg'),
-         url('./font/dynalightwfont/Dynalight-Regular.ttf') format('truetype'),
-         url('./font/dynalightwfont/Dynalight-Regular.woff') format('woff'),
-         url('./font/dynalightwfont/Dynalight-Regular.woff2') format('woff2');
+    src:url('../font/dynalightwfont/Dynalight-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 /*마루부리*/
 @font-face {
     font-family: 'MARUBuriBeta-Regular';
-    src: url('./font/마루/MARUBuriBeta-Regular.svg#MARUBuriBeta-Regular') format('svg'),
-         url('./font/마루/MARUBuriBeta-Regular.ttf') format('truetype'),
-         url('./font/마루/MARUBuriBeta-Regular.woff') format('woff');
+    src:url('../font/마루/MARUBuriBeta-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -181,7 +172,7 @@ body{
 }
 
 .Gandalf:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/간달프.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/간달프.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -193,7 +184,7 @@ body{
 }
 
 .Joker:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/히스레저조커.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/히스레저조커.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -205,7 +196,7 @@ body{
 }
 
 .Olivia:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/올리비아.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/올리비아.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -217,7 +208,7 @@ body{
 }
 
 .Flash:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/플래쉬.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/플래쉬.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -229,7 +220,7 @@ body{
 }
 
 .Latso:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/랏소.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/랏소.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -241,7 +232,7 @@ body{
 }
 
 .Frank:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/프랭크.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/프랭크.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -253,7 +244,7 @@ body{
 }
 
 .Josse:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/조제.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/조제.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -265,7 +256,7 @@ body{
 }
 
 .Groot:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/groot정.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/groot정.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -277,7 +268,7 @@ body{
 }
 
 .Farhan:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./이미지/파르한정.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/파르한정.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

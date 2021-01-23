@@ -7,7 +7,7 @@
 /*abster*/
 @font-face{
     font-family: abster;
-    src:url(./font/abster-webfont.woff) format('woff')
+    src:url(../font/abster-webfont.woff) format('woff');
 }
 /* 1rem = 10px */
 html{
@@ -27,7 +27,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(./이미지/무비끄맨_가운데.png);
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
 }
 
 .header{

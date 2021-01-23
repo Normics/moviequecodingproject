@@ -35,12 +35,12 @@ html{
 
 .section .left {
   left: 0px;
-  background:url('./이미지/left.png') center center / 100% no-repeat;
+  background:url('../image/left.png') center center / 100% no-repeat;
 }
 
 .section .right {
   right: 0px;
-  background:url('./이미지/right.png') center center / 100% no-repeat;
+  background:url('../image/right.png') center center / 100% no-repeat;
 }
 
 .section .slidelist > li{

@@ -7,23 +7,19 @@
 /*마루부리*/
 @font-face {
     font-family: 'MARUBuriBeta-Regular';
-    src: url('./font/마루/MARUBuriBeta-Regular.svg#MARUBuriBeta-Regular') format('svg'),
-         url('./font/마루/MARUBuriBeta-Regular.ttf') format('truetype'),
-         url('./font/마루/MARUBuriBeta-Regular.woff') format('woff');
+    src: url('../font/마루/MARUBuriBeta-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 /*abster*/
 @font-face{
     font-family: abster;
-    src:url(./font/abster-webfont.woff) format('woff')
+    src:url(../font/abster-webfont.woff) format('woff');
 }
 /*Product Sans*/
 @font-face {
     font-family: 'ProductSans-Regular';
-    src: url('./font/Productsanswfont/ProductSans-Regular.svg#ProductSans-Regular') format('svg'),
-         url('./font/Productsanswfont/ProductSans-Regular.ttf') format('truetype'),
-         url('./font/Productsanswfont/ProductSans-Regular.woff') format('woff');
+    src: url('../font/Productsanswfont/ProductSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -115,7 +111,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(./이미지/무비끄맨_가운데.png);
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
     color: white;
 }
 
