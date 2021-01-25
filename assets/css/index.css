@@ -6,18 +6,14 @@
 
 @font-face {
     font-family: 'SignericaMedium';
-    src: url('../font/signerica\ wfont/SignericaMedium.svg#SignericaMedium') format('svg'),
-         url('../font/signerica\ wfont/SignericaMedium.ttf') format('truetype'),
-         url('../font/signerica\ wfont/SignericaMedium.woff') format('woff');
+    src: url('../font/signerica\ wfont/SignericaMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ProductSans-Regular';
-    src: url('../font/Productsanswfont/ProductSans-Regular.svg#ProductSans-Regular') format('svg'),
-         url('../font/Productsanswfont/ProductSans-Regular.ttf') format('truetype'),
-         url('../font/Productsanswfont/ProductSans-Regular.woff') format('woff');
+    src: url('../font/Productsanswfont/ProductSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

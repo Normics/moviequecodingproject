@@ -80,11 +80,8 @@ body{
 }
 
 .section .slidelist > li:nth-child(1) > a {border: 2px solid white;}
-
-.img-box-1 .section .slidelist > li > a img{width: 100%;}
-.img-box-2 .section .slidelist > li > a img{width: 100%;}
-.img-box-3 .section .slidelist > li > a img{width: 100%;}
-
+/* 이미지 사이즈 */
+div[class*="img-box"] .section .slidelist > li > a img{width: 100%;}
 .img-box-4 .section .slidelist > li > a {
     overflow: hidden;
     display: flex;
@@ -95,16 +92,6 @@ body{
 .img-box-4 .section .slidelist > li > a img{
     height: 100%;
 }
-
-.img-box-5 .section .slidelist > li > a img{width: 100%;}
-.img-box-6 .section .slidelist > li > a img{width: 100%;}
-.img-box-7 .section .slidelist > li > a img{width: 100%;}
-.img-box-8 .section .slidelist > li > a img{width: 100%;}
-.img-box-9 .section .slidelist > li > a img{width: 100%;}
-.img-box-10 .section .slidelist > li > a img{width: 100%;}
-.img-box-11 .section .slidelist > li > a img{width: 100%;}
-.img-box-12 .section .slidelist > li > a img{width: 100%;}
-.img-box-13 .section .slidelist > li > a img{width: 100%;}
 
 .img-box-1{grid-column: span 4;}
 .img-box-2{grid-column: span 4;}
