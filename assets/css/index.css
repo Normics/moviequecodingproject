@@ -24,17 +24,38 @@ html{
 
 /* PC (해상도 1024px)*/
 @media all and (min-width:1024px) { 
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
+    } 
     .phrase h2{font-size: 8rem; line-height: 10rem;}
     .phrase p{font-size: 2.5rem;}
 
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
+    body{
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
+    } 
     .phrase h2{font-size: 7rem; line-height: 9rem;}
     .phrase p{font-size: 2.3rem;}
 }
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) { 
+    body{
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
+    } 
     .phrase h2{font-size: 4rem; line-height: 6rem;}
     .phrase p{font-size: 1.5rem;}
 }
@@ -47,10 +68,6 @@ html{
 
 body{
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../image/무비끄맨_가운데.png);
 }
 
 .phrase{

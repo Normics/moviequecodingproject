@@ -23,11 +23,6 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
 }
 
 .header{
@@ -61,126 +56,148 @@ body{
 .img-box-13{opacity:0; animation: fadeIn 1s 0.2s ease-in-out forwards;}
 
 /* PC (해상도 1024px)*/
-@media all and (min-width:1024px) { 
-.header { height: 300px; }
-.title { font-size: 8rem; }
+@media all and (min-width:1024px) {
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
+    } 
 
-.main{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 5px 50px 5px;
-}
+    .header { height: 300px; }
+    .title { font-size: 8rem; }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(12,72px);
-    grid-auto-rows: minmax(300px, auto);
-    grid-gap: 30px;
-}
+    .main{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5px 50px 5px;
+    }
 
-.section .slidelist > li:nth-child(1) > a {border: 2px solid white;}
-/* 이미지 사이즈 */
-div[class*="img-box"] .section .slidelist > li > a img{width: 100%;}
-.img-box-4 .section .slidelist > li > a {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 640px;
-}
-.img-box-4 .section .slidelist > li > a img{
-    height: 100%;
-}
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(12,72px);
+        grid-auto-rows: minmax(300px, auto);
+        grid-gap: 30px;
+    }
 
-.img-box-1{grid-column: span 4;}
-.img-box-2{grid-column: span 4;}
-.img-box-3{grid-column: span 4;}
-.img-box-4{grid-column: span 8; grid-row: span 2;}
-.img-box-5{grid-column: span 4;}
-.img-box-6{grid-column: span 4;}
-.img-box-7{grid-column: span 12;}
-.img-box-8{grid-column: span 3;}
-.img-box-9{grid-column: span 3;}
-.img-box-10{grid-column: span 3;}
-.img-box-11{grid-column: span 3;}
-.img-box-12{grid-column: span 6;}
-.img-box-13{grid-column: span 6;}
+    .section .slidelist > li:nth-child(1) > a {border: 2px solid white;}
+    /* 이미지 사이즈 */
+    div[class*="img-box"] .section .slidelist > li > a img{width: 100%;}
+    .img-box-4 .section .slidelist > li > a {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 640px;
+    }
+    .img-box-4 .section .slidelist > li > a img{
+        height: 100%;
+    }
+
+    .img-box-1{grid-column: span 4;}
+    .img-box-2{grid-column: span 4;}
+    .img-box-3{grid-column: span 4;}
+    .img-box-4{grid-column: span 8; grid-row: span 2;}
+    .img-box-5{grid-column: span 4;}
+    .img-box-6{grid-column: span 4;}
+    .img-box-7{grid-column: span 12;}
+    .img-box-8{grid-column: span 3;}
+    .img-box-9{grid-column: span 3;}
+    .img-box-10{grid-column: span 3;}
+    .img-box-11{grid-column: span 3;}
+    .img-box-12{grid-column: span 6;}
+    .img-box-13{grid-column: span 6;}
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
-.header { height: 300px; }
-.title { font-size: 7rem; }
+    body{
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
+    } 
+    .header { height: 300px; }
+    .title { font-size: 7rem; }
 
-.main{
-    max-width: 768px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 5px 50px 5px;
-}
+    .main{
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5px 50px 5px;
+    }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(6,103px);
-    grid-auto-rows: minmax(200px, auto);
-    grid-gap: 30px;
-}
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(6,103px);
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 30px;
+    }
 
-.section .slidelist > li:nth-child(1) > a {border: 2px solid white;}
+    .section .slidelist > li:nth-child(1) > a {border: 2px solid white;}
 
-.section .slidelist > li > a img{width: 100%;}
+    .section .slidelist > li > a img{width: 100%;}
 
-.img-box-1{grid-column: span 3;}
-.img-box-2{grid-column: span 3;}
-.img-box-3{grid-column: span 6;}
-.img-box-4{grid-column: span 3;}
-.img-box-5{grid-column: span 3;}
-.img-box-6{grid-column: span 2;}
-.img-box-7{grid-column: span 2;}
-.img-box-8{grid-column: span 2;}
-.img-box-9{grid-column: span 6;}
-.img-box-10{grid-column: span 3;}
-.img-box-11{grid-column: span 3;}
-.img-box-12{grid-column: span 3;}
-.img-box-13{grid-column: span 3;}
+    .img-box-1{grid-column: span 3;}
+    .img-box-2{grid-column: span 3;}
+    .img-box-3{grid-column: span 6;}
+    .img-box-4{grid-column: span 3;}
+    .img-box-5{grid-column: span 3;}
+    .img-box-6{grid-column: span 2;}
+    .img-box-7{grid-column: span 2;}
+    .img-box-8{grid-column: span 2;}
+    .img-box-9{grid-column: span 6;}
+    .img-box-10{grid-column: span 3;}
+    .img-box-11{grid-column: span 3;}
+    .img-box-12{grid-column: span 3;}
+    .img-box-13{grid-column: span 3;}
 }
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) { 
-.header { height: 200px; }
-.title { font-size: 4rem; }
-    
-.main{
-    max-width: 360px;
-    width: 100%;
-    padding: 0 5px 50px 5px;
-    margin: 0 auto;
-}
+    body{
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url(../image/무비끄맨_가운데.png);
+    } 
+    .header { height: 200px; }
+    .title { font-size: 4rem; }
+        
+    .main{
+        max-width: 360px;
+        width: 100%;
+        padding: 0 5px 50px 5px;
+        margin: 0 auto;
+    }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(6,40px);
-    grid-auto-rows: minmax(50px, auto);
-    grid-gap: 22px;
-    margin: 0 auto;
-}
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(6,40px);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 22px;
+        margin: 0 auto;
+    }
 
-.section .slidelist > li:nth-child(1) > a {border: 2px solid white;}
+    .section .slidelist > li:nth-child(1) > a {border: 2px solid white;}
 
-.section .slidelist > li > a img{width: 100%;}
+    .section .slidelist > li > a img{width: 100%;}
 
-.img-box-1{grid-column: span 6;}
-.img-box-2{grid-column: span 6;}
-.img-box-3{grid-column: span 6;}
-.img-box-4{grid-column: span 6;}
-.img-box-5{grid-column: span 6;}
-.img-box-6{grid-column: span 6;}
-.img-box-7{grid-column: span 6;}
-.img-box-8{grid-column: span 6;}
-.img-box-9{grid-column: span 6;}
-.img-box-10{grid-column: span 6;}
-.img-box-11{grid-column: span 6;}
-.img-box-12{grid-column: span 6;}
-.img-box-13{grid-column: span 6;}
+    .img-box-1{grid-column: span 6;}
+    .img-box-2{grid-column: span 6;}
+    .img-box-3{grid-column: span 6;}
+    .img-box-4{grid-column: span 6;}
+    .img-box-5{grid-column: span 6;}
+    .img-box-6{grid-column: span 6;}
+    .img-box-7{grid-column: span 6;}
+    .img-box-8{grid-column: span 6;}
+    .img-box-9{grid-column: span 6;}
+    .img-box-10{grid-column: span 6;}
+    .img-box-11{grid-column: span 6;}
+    .img-box-12{grid-column: span 6;}
+    .img-box-13{grid-column: span 6;}
 }
